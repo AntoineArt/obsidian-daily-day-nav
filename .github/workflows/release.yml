@@ -36,7 +36,6 @@ jobs:
           subject-path: |
             main.js
             manifest.json
-            styles.css
 
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2
@@ -45,6 +44,5 @@ jobs:
           files: |
             main.js
             manifest.json
-            styles.css
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

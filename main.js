@@ -8,7 +8,15 @@ module.exports = class DailyPreviousDayPlugin extends Plugin {
       id: "open-previous-daily",
       name: "Open previous daily note",
       callback: () => {
-        void this.openPreviousDaily();
+        void this.openDailyForOffset(-1);
+      },
+    });
+
+    this.addCommand({
+      id: "open-next-daily",
+      name: "Open next daily note",
+      callback: () => {
+        void this.openDailyForOffset(1);
       },
     });
   }
@@ -40,7 +48,7 @@ module.exports = class DailyPreviousDayPlugin extends Plugin {
     return parsed.isValid() ? parsed.startOf("day") : window.moment().startOf("day");
   }
 
-  async openPreviousDaily() {
+  async openDailyForOffset(dayOffset) {
     const core = this.getDailyNotesCore();
     if (!core?.enabled) {
       new Notice("Enable the daily notes core plugin first.");
@@ -53,7 +61,7 @@ module.exports = class DailyPreviousDayPlugin extends Plugin {
       return;
     }
 
-    const target = this.getReferenceDate().subtract(1, "day");
+    const target = this.getReferenceDate().add(dayOffset, "day");
     const path = normalizePath(`${folder}/${target.format(format)}.md`);
     const existing = this.app.vault.getAbstractFileByPath(path);
     const file = existing ?? (await core.instance.createDailyNote(target));

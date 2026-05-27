@@ -1,9 +1,9 @@
 {
   "id": "daily-previous-day",
   "name": "Daily Previous Day",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minAppVersion": "1.8.0",
-  "description": "Open the previous calendar daily note, creating it from your template if it does not exist yet.",
+  "description": "Open the previous or next calendar daily note, creating it from your template if it does not exist yet.",
   "author": "AntoineArt",
   "authorUrl": "https://github.com/AntoineArt",
   "isDesktopOnly": false

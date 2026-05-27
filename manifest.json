@@ -1,0 +1,10 @@
+{
+  "id": "daily-gaps",
+  "name": "Daily Gaps",
+  "version": "1.0.0",
+  "minAppVersion": "1.8.0",
+  "description": "Open, create, or fill missing daily notes between existing journal entries.",
+  "author": "AntoineArt",
+  "authorUrl": "https://github.com/AntoineArt",
+  "isDesktopOnly": false
+}

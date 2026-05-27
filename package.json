@@ -1,0 +1,17 @@
+{
+  "name": "obsidian-daily-gaps",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run lint",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^9.39.0",
+    "eslint-plugin-obsidianmd": "^0.1.9",
+    "globals": "^16.4.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.46.0"
+  }
+}

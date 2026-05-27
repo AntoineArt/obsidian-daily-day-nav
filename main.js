@@ -2,7 +2,7 @@
 
 const { Plugin, Notice, normalizePath } = require("obsidian");
 
-module.exports = class DailyPreviousDayPlugin extends Plugin {
+module.exports = class DailyDayNavPlugin extends Plugin {
   onload() {
     this.addCommand({
       id: "open-previous-daily",

@@ -1,20 +1,17 @@
-# Daily Previous Day
+# Daily Day Nav
 
-Ouvre la note quotidienne du jour calendaire précédent. Si elle n'existe pas encore, elle est créée avec votre modèle Daily notes.
+Ouvre la note quotidienne du jour calendaire précédent ou suivant. Si elle n'existe pas encore, elle est créée avec votre modèle Daily notes.
 
-## Commande
+## Commandes
 
-**Open previous daily note**
+- **Open previous daily note**
+- **Open next daily note**
 
-- depuis une note quotidienne : ouvre la veille ;
-- depuis une autre note : part d'aujourd'hui et ouvre hier ;
-- crée la note si elle manque.
-
-## Raccourci clavier
+## Raccourcis clavier
 
 1. **Paramètres → Raccourcis clavier**
-2. Cherchez `Open previous daily note`
-3. Assignez la combinaison souhaitée
+2. Cherchez les commandes ci-dessus
+3. Assignez vos combinaisons
 
 ## Prérequis
 
